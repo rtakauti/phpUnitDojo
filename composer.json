@@ -6,14 +6,18 @@
         "phpunit/phpunit": "^5.5",
         "mockery/mockery": "^0.9.5"
     },
-     "autoload": {
+    "autoload": {
         "psr-4": {
             "Dojo\\": "src/"
-        }
+        },
+        "files": [
+            "src/data.csv"
+        ]
     },
     "autoload-dev": {
         "classmap": [
             "tests"
         ]
     }
+
 }

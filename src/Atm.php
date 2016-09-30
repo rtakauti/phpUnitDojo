@@ -5,26 +5,29 @@ class Atm
 {
     private $availableBills;
     private $billCount;
+    private $index = 0;
+
+    public function __construct($bills)
+    {
+        $this->availableBills = $bills;
+        $this->billCount = array_fill_keys($this->availableBills, 0);
+    }
 
     public function withdraw($withdraw)
     {
-        $this->availableBills = [100, 50, 20, 10];
-        $this->billCount = [
-            100 => 0,
-            50 => 0,
-            20 => 0,
-            10 => 0,
-        ];
-        $index = 0;
         while ($withdraw > 0) {
-            if (($withdraw - $this->availableBills[$index]) >= 0) {
-                $withdraw -= $this->availableBills[$index];
-                $this->billCount[$this->availableBills[$index]]++;
+            if (($withdraw - $this->availableBills[$this->index]) >= 0) {
+                $withdraw -= $this->availableBills[$this->index];
+                $this->billCount[$this->availableBills[$this->index]]++;
             } else {
-                $index++;
+                $this->index++;
+            }
+
+            if ($this->billCount[$this->availableBills[$this->index]] != 0) {
+                $result[$this->availableBills[$this->index]] = $this->billCount[$this->availableBills[$this->index]];
             }
         }
 
-        return $this->billCount;
+        return $result;
     }
 }

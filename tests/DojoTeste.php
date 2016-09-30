@@ -5,7 +5,8 @@ use PHPUnit_Framework_TestCase;
 
 class DojoTest extends PHPUnit_Framework_TestCase
 {
-    public function testShouldPrintDefaultHelloWorld() {
+    public function testShouldPrintDefaultHelloWorld()
+    {
         // Set
         $dojo = new Dojo;
 
@@ -16,7 +17,8 @@ class DojoTest extends PHPUnit_Framework_TestCase
         $this->assertSame('Hello, Dojo!', $result);
     }
 
-    public function testShouldPrintCustomizedHelloWorld() {
+    public function testShouldPrintCustomizedHelloWorld()
+    {
         // Set
         $dojo = new Dojo;
 
