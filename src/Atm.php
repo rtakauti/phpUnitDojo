@@ -7,9 +7,9 @@ class Atm
     private $billCount;
     private $index = 0;
 
-    public function __construct($bills)
+    public function __construct(...$bills)
     {
-        $this->availableBills = $bills;
+        $this->availableBills = (array)$bills;
         $this->billCount = array_fill_keys($this->availableBills, 0);
     }
 
