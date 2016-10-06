@@ -19,10 +19,11 @@ class AtmTest extends PHPUnit_Framework_TestCase
 
     public function scenarios()
     {
-//        return new CsvFileIterator(__DIR__.DIRECTORY_SEPARATOR.'data.csv');
-        $result = [];
+        return new CsvFileIterator(__DIR__.DIRECTORY_SEPARATOR.'data.csv');
+
         $csv = fgetcsv(fopen(__DIR__ . DIRECTORY_SEPARATOR . 'data.csv', 'r'));
         $title = array_shift($csv);
+        $result =[];
         $key = [];
         $value = [];
         for ($i = 0; $i < count($csv); $i++) {

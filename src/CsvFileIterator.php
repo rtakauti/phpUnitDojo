@@ -20,7 +20,15 @@ class CsvFileIterator implements \Iterator
     public function rewind()
     {
         rewind($this->file);
-        $this->current = fgetcsv($this->file);
+        $csv = fgetcsv($this->file);
+        $title = array_shift($csv);
+        $key = [];
+        $value = [];
+        for ($i = 0; $i < count($csv); $i++) {
+            ($i % 2 === 0) ? $key[] = $csv[$i] : $value[] = (int)$csv[$i];
+        }
+        $sub = array_combine($key, $value);
+        $this->current =  [$title, $sub];
         $this->key = 0;
     }
 
@@ -41,7 +49,15 @@ class CsvFileIterator implements \Iterator
 
     public function next()
     {
-        $this->current = fgetcsv($this->file);
+        $csv = fgetcsv($this->file);
+        $title = array_shift($csv);
+        $key = [];
+        $value = [];
+        for ($i = 0; $i < count($csv); $i++) {
+            ($i % 2 === 0) ? $key[] = $csv[$i] : $value[] = (int)$csv[$i];
+        }
+        $sub = array_combine($key, $value);
+        $this->current =  [$title, $sub];
         $this->key++;
     }
 }
