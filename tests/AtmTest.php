@@ -12,7 +12,7 @@ class AtmTest extends PHPUnit_Framework_TestCase
      */
     public function testShoulGiveMaximumBillValueInReais($input, $output)
     {
-        $atm = new Atm(100, 50, 20, 10, 5, 2);
+        $atm = new Atm(100, 50, 20, 10, 5);
         $result = $atm->withdraw($input);
         $this->assertSame($output, $result);
     }
