@@ -45,3 +45,4 @@ OK (2 tests, 2 assertions)
 ```
 
 E é isso, você está pronto para utilizar sua máquina durante o Dojo! :)
+
