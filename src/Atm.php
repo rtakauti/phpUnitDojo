@@ -16,9 +16,10 @@ class Atm
 
     public function withdraw($withdraw)
     {
-        if (is_string($withdraw)) {
-            return 'string';
+        if ($withdraw !== null && !is_integer($withdraw)) {
+            return gettype($withdraw);
         }
+
         while ($withdraw > 0) {
             if (($withdraw - $this->availableBills[$this->index]) < 0) {
                 $this->index++;
