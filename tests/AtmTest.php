@@ -2,7 +2,6 @@
 
 namespace Dojo;
 
-//require_once 'CsvFileIterator.php';
 use PHPUnit_Framework_TestCase;
 
 class AtmTest extends PHPUnit_Framework_TestCase
@@ -12,7 +11,7 @@ class AtmTest extends PHPUnit_Framework_TestCase
      */
     public function testShoulGiveMaximumBillValueInReais($input, $output)
     {
-        $atm = new Atm(100, 50, 20, 10, 5);
+        $atm = new Atm(100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.1, 0.05);
         $result = $atm->withdraw($input);
         $this->assertSame($output, $result);
     }

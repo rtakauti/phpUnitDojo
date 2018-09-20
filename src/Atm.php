@@ -14,7 +14,7 @@ class Atm
 
     public function withdraw($withdraw)
     {
-        if ($withdraw !== null && !is_integer($withdraw)) {
+        if ($withdraw !== null && !is_numeric($withdraw)) {
             return gettype($withdraw);
         }
 
