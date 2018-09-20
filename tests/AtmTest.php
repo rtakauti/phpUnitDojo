@@ -1,8 +1,8 @@
 <?php
+
 namespace Dojo;
 
 //require_once 'CsvFileIterator.php';
-use Dojo\Atm;
 use PHPUnit_Framework_TestCase;
 
 class AtmTest extends PHPUnit_Framework_TestCase
@@ -20,20 +20,18 @@ class AtmTest extends PHPUnit_Framework_TestCase
     public function scenarios()
     {
         return new CsvFileIterator(__DIR__.DIRECTORY_SEPARATOR.'data.csv');
-
         $csv = fgetcsv(fopen(__DIR__ . DIRECTORY_SEPARATOR . 'data.csv', 'r'));
         $title = array_shift($csv);
-        $result =[];
+        $result = [];
         $key = [];
         $value = [];
         for ($i = 0; $i < count($csv); $i++) {
             ($i % 2 === 0) ? $key[] = $csv[$i] : $value[] = (int)$csv[$i];
         }
         $sub = array_combine($key, $value);
-        $result[$title . ' Reais'] =  [$title, $sub];
+        $result[$title . ' Reais'] = [$title, $sub];
 
         return $result;
-
         return [
             '30 reais' => [30, [20 => 1, 10 => 1]],
             '50 reais' => [50, [50 => 1]],

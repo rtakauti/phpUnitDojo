@@ -1,4 +1,5 @@
 <?php
+
 namespace Dojo;
 
 class Atm
@@ -15,18 +16,18 @@ class Atm
 
     public function withdraw($withdraw)
     {
-        if(is_string($withdraw)) {
+        if (is_string($withdraw)) {
             return 'string';
         }
-        $result =[];
+        $result = [];
         while ($withdraw > 0) {
-            if (($withdraw - $this->availableBills[$this->index]) >= 0) {
-                $withdraw -= $this->availableBills[$this->index];
-                $this->billCount[$this->availableBills[$this->index]]++;
-            } else {
+            if (($withdraw - $this->availableBills[$this->index]) < 0) {
                 $this->index++;
+                continue;
             }
 
+            $withdraw -= $this->availableBills[$this->index];
+            $this->billCount[$this->availableBills[$this->index]]++;
             if ($this->billCount[$this->availableBills[$this->index]] != 0) {
                 $result[$this->availableBills[$this->index]] = $this->billCount[$this->availableBills[$this->index]];
             }
