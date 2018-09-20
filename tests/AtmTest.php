@@ -19,23 +19,23 @@ class AtmTest extends PHPUnit_Framework_TestCase
 
     public function scenarios()
     {
-        //        return new CsvFileIterator(__DIR__.DIRECTORY_SEPARATOR.'data.csv');
-        //
-        //        $handler = fopen(__DIR__ . DIRECTORY_SEPARATOR . 'data.csv', 'r');
-        //        $csv = fgetcsv($handler);
-        //        $title = array_shift($csv);
-        //        $result = [];
-        //        $key = [];
-        //        $value = [];
-        //        $count = count($csv);
-        //        for ($i = 0; $i < $count; $i++) {
-        //            ($i % 2 === 0) ? $key[] = $csv[$i] : $value[] = (int)$csv[$i];
-        //        }
-        //
-        //        $sub = array_combine($key, $value);
-        //        $result[$title . ' Reais'] = [$title, $sub];
-        //        fclose($handler);
-        //        return $result;
+        return new CsvFileIterator(__DIR__ . DIRECTORY_SEPARATOR . 'data.csv');
+
+        $handler = fopen(__DIR__ . DIRECTORY_SEPARATOR . 'data.csv', 'r');
+        $csv = fgetcsv($handler);
+        $title = array_shift($csv);
+        $result = [];
+        $key = [];
+        $value = [];
+        $count = count($csv);
+        for ($i = 0; $i < $count; $i++) {
+            ($i % 2 === 0) ? $key[] = $csv[$i] : $value[] = (int)$csv[$i];
+        }
+
+        $sub = array_combine($key, $value);
+        $result[$title . ' Reais'] = [$title, $sub];
+        fclose($handler);
+        return $result;
 
         return [
             '30 reais' => [30, [20 => 1, 10 => 1]],
