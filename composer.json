@@ -11,7 +11,7 @@
             "Dojo\\": "src/"
         },
         "files": [
-            "src/data.csv"
+            "tests/data.csv"
         ]
     },
     "autoload-dev": {
