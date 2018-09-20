@@ -19,7 +19,6 @@ class Atm
         if (is_string($withdraw)) {
             return 'string';
         }
-        $result = [];
         while ($withdraw > 0) {
             if (($withdraw - $this->availableBills[$this->index]) < 0) {
                 $this->index++;
@@ -27,12 +26,9 @@ class Atm
             }
 
             $withdraw -= $this->availableBills[$this->index];
-            $this->billCount[$this->availableBills[$this->index]]++;
-            if ($this->billCount[$this->availableBills[$this->index]] != 0) {
-                $result[$this->availableBills[$this->index]] = $this->billCount[$this->availableBills[$this->index]];
-            }
+            ++$this->billCount[$this->availableBills[$this->index]];
         }
 
-        return $result;
+        return array_filter($this->billCount);
     }
 }
