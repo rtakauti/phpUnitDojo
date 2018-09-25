@@ -1,4 +1,5 @@
 <?php
+
 namespace Dojo;
 
 class Atm
@@ -26,5 +27,14 @@ class Atm
         }
 
         return $this->billCount;
+    }
+
+    public function sum($num1, $num2)
+    {
+        if (!is_numeric($num1) || !is_numeric($num2)) {
+            throw new \Exception('Bad argument');
+        }
+
+        return $num1 + $num2;
     }
 }

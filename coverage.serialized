@@ -1,0 +1,155 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  '/home/rtakauti/GitHub/phpUnitDojo/src/Atm.php' => 
+  array (
+    12 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    13 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    19 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    20 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    21 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    22 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    23 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    25 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    29 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"',
+      1 => 'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"',
+      2 => 'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"',
+      3 => 'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"',
+      4 => 'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"',
+    ),
+    30 => NULL,
+    34 => 
+    array (
+      0 => 'Dojo\\AtmTest::testShouldSum with data set "equals 2"',
+      1 => 'Dojo\\AtmTest::testShouldSum with data set "equals 3"',
+      2 => 'Dojo\\AtmTest::testShouldSum with data set "equals string"',
+    ),
+    35 => NULL,
+  ),
+  '/home/rtakauti/GitHub/phpUnitDojo/src/Dojo.php' => 
+  array (
+    7 => 
+    array (
+      0 => 'Dojo\\DojoTest::testShouldPrintDefaultHelloWorld',
+      1 => 'Dojo\\DojoTest::testShouldPrintCustomizedHelloWorld',
+    ),
+    8 => NULL,
+  ),
+));
+$coverage->setTests(array (
+  'Dojo\\AtmTest::testShouldGiveBills with data set "30 reais"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\AtmTest::testShouldGiveBills with data set "50 reais"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\AtmTest::testShouldGiveBills with data set "80 reais"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\AtmTest::testShouldGiveBills with data set "100 reais"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\AtmTest::testShouldGiveBills with data set "150 reais"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\AtmTest::testShouldSum with data set "equals 2"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\AtmTest::testShouldSum with data set "equals 3"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\AtmTest::testShouldSum with data set "equals string"' => 
+  array (
+    'size' => 'unknown',
+    'status' => 3,
+  ),
+  'Dojo\\DojoTest::testShouldPrintDefaultHelloWorld' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Dojo\\DojoTest::testShouldPrintCustomizedHelloWorld' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  '/home/rtakauti/GitHub/phpUnitDojo/src/Atm.php' => true,
+  '/home/rtakauti/GitHub/phpUnitDojo/src/Dojo.php' => true,
+));
+
+return $coverage;

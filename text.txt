@@ -1,0 +1,14 @@
+Dojo\Atm
+ [x] Should give bills for 30 reais
+ [x] Should give bills for 50 reais
+ [x] Should give bills for 80 reais
+ [x] Should give bills for 100 reais
+ [x] Should give bills for 150 reais
+ [x] Should sum equals 2
+ [x] Should sum equals 3
+ [ ] Should sum equals string
+
+Dojo\Dojo
+ [x] Should print default hello world
+ [x] Should print customized hello world
+
